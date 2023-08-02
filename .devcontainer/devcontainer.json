@@ -33,6 +33,7 @@
     "DB_NAME": "moodle",
     "DB_USER": "moodle",
     "DB_USER_PWD": "moodle",
-    "INSTALL_MOOSH": "TRUE"
+    "INSTALL_MOOSH": "TRUE",
+    "INSTALL_BEHAT": "FALSE"
   }
 }

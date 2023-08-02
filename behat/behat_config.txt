@@ -1,0 +1,7 @@
+
+$CFG->behat_wwwroot   = 'http://127.0.0.1:8080/moodle-402';
+$CFG->behat_dataroot  = '/var/www/behatdata-402';
+$CFG->behat_prefix     = 'behat_mdl_';
+
+require_once('/opt/moodle-browser-config/init.php');
+require_once(__DIR__ . '/lib/setup.php');
