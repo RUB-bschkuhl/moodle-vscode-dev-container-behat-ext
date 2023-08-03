@@ -11,7 +11,7 @@ if [ "$INSTALL_BEHAT" == "TRUE" ]; then
 echo -e "\nInstall Behat\n"
 
 # Setup Firefox mit geckodriver
-sudo apt-get install -y xvfb # für Display
+sudo apt-get install -y xvfb # für Display #WSL2-getestet
 sudo apt install -y firefox-esr # Firefox 
 wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz # Webdriver
 tar xzf geckodriver-v0.33.0-linux64.tar.gz

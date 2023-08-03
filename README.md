@@ -1,5 +1,6 @@
-# Moodle VSCode Dev Container Example
+# Moodle VSCode Dev Container incl Behat Headless Browser with Firefox on WSL2
 
+0. [Unterschied zu Upstream](#pre)
 1. [Docker installieren](#docker-installieren)
     1. [Windows](#windows-docker)
     2. [macOS](#macos-docker)
@@ -9,6 +10,10 @@
 3. [Erster Start von VSCode](#vscode-start)
 4. [Container starten](#container)
 
+## Notiz - Unterschied zu Upstream <a name=pre">
+
+* Der Unterschied zum Upstream Repository ist die Einbindung einer Variante des Behat Testings die nicht Headless erfolgt, sondern durch einen Firefox Browser in der WSL2 durch die Nutzer optisch nachvollziehbar ist.
+* **Achtung**: Der aktuelle Stand des Forks ist nur in der WSL2 einer Windows Umgebung getestet worden. Es ist möglichdas für die Nutzung unter MacOS oder Unix Distributionen andere Pakete in der *postcreateCommand.sh* installiert werden müssen (Siehe Kommentar **#WSL2-getestet**).
 
 ## Docker installieren <a name="docker-installieren"></a>
 
