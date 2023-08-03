@@ -92,6 +92,7 @@ fi
 MOODLEDIR=$PWD/moodle-${MDL_VERSION}
 if [ ! -d "$MOODLEDIR" ]; then
   git clone -b MOODLE_${MDL_VERSION}_STABLE https://github.com/moodle/moodle.git $MOODLEDIR --depth 1
+  sudo rm -rf $MOODLEDIR/.git
 fi
 
 CFGFILE=$MOODLEDIR/config.php
@@ -141,7 +142,7 @@ fi
    # export DISPLAY=:0 && geckodriver 
    # :0 might not be available, try different display
    # then in seperate terminal the desired tests:
-   # php vendor/bin/behat --tags="@core_block" --config /var/www/behatdata-402/behatrun/behat/behat.yml --profile=geckodriver
+   # php vendor/bin/behat --tags="@core_block_test" --config /var/www/behatdata-402/behatrun/behat/behat.yml --profile=geckodriver
   fi
 
   # Set rights on newly downloaded files
